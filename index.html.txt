@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UniGPA+ | Сессиямен GPA есептеу</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>🎓 UniGPA+ — Сессиямен GPA есептеу</h1>
+<table id="gradeTable">
+<tr><th>Пән</th><th>1-рк</th><th>2-рк</th><th>Сессия</th><th>Кредит</th></tr>
+<tr>
+<td><input type="text" placeholder="Пән атауы"></td>
+<td><input type="number" min="0" max="100"></td>
+<td><input type="number" min="0" max="100"></td>
+<td><input type="number" min="0" max="100"></td>
+<td><input type="number" min="1" max="10"></td>
+</tr>
+</table>
+<div class="center">
+<button onclick="addRow()">+ Пән қосу</button>
+<button onclick="calculateGPA()">📊 Есептеу</button>
+</div>
+<div id="result" class="result"></div>
+<script src="script.js"></script>
+</body>
+</html>
